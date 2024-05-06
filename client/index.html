@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Multiplayer snake</title>
+		<title>Snake</title>
+		<link rel="icon" href="https://cdn-icons-png.freepik.com/512/296/296548.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="/client/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/client/css/game.css">
 		<script src="/client/js/jquery-3.3.1.min.js"></script>
@@ -16,7 +17,7 @@
 
 		<div id="menu" class="border border-dark rounded">
 			<form class="mx-2 my-2">
-				<h1 class="text-center">Multiplayer Snake</h1>
+				<h1 class="text-center">Snake</h1>
 				<div id="final-score" class="text-center">
 					<span class="badge badge-info">
 						Your final score:
@@ -30,7 +31,6 @@
 				<div class="mb-2">
 					<input class="form-control btn btn-success active" type="button" id="btn_play" value="Play"/>
 				</div>
-				<a href="https://github.com/AntonUden/snake-multiplayer/issues" target="_blank">Report a bug</a>
 			</form>
 		</div>
 
@@ -43,9 +43,9 @@
 					</span>
 				</div>
 				<span class="badge badge-light" id="position" class="mx-1 my-1"></span>
-				<br>
+				<!--<br>-->
 			</div>
-			<div id="ping" class="mx-1 my-1">
+			<div id="ping" class="mx-1 my-1" hidden>
 				<span id="ping-badge" class="badge badge-success">
 					Server ping: 
 					<span id="server-ping"></span>
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 
-		<div id="leaderboard" class="border border-dark">
+		<div id="leaderboard" class="border border-dark" hidden>
 			<div id="leaderboard-text" class="mx-4">
 				Leaderboard
 			</div>
